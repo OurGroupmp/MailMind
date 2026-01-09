@@ -29,7 +29,7 @@ app.use("/api/analytics", analyticsRoutes);
 const startServer = async () => {
   try {
     await connectDB();         
-    await seedEmails();
+    // await seedEmails();
 
     app.get("/", (req, res) => {
       res.json({ message: "MailMind backend running 🚀" });
