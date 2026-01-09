@@ -15,6 +15,8 @@ app.use(
     origin: [
       "http://localhost:5173",           // local dev
       "https://mail-mind-rust.vercel.app", // deployed frontend
+      "https://mail-mind-git-main-mirthipati-megha-vardhans-projects.vercel.app",
+      "http://mail-mind-hq31ueev4-mirthipati-megha-vardhans-projects.vercel.app"
     ],
   })
 );
