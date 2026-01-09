@@ -2,7 +2,6 @@ import express from "express";
 import cors from "cors";
 import dotenv from "dotenv";
 import connectDB from "./config/db.js";
-import seedEmails from "./services/seedEmails.js";
 import emailRoutes from "./routes/emailroutes.js";
 import analyticsRoutes from "./routes/analyticsRoutes.js";
 
@@ -15,7 +14,7 @@ app.use(
   cors({
     origin: [
       "http://localhost:5173",           // local dev
-      "https://mail-mind-evu63t6m7-mirthipati-megha-vardhans-projects.vercel.app/", // deployed frontend
+      "https://mail-mind-rust.vercel.app/", // deployed frontend
     ],
   })
 );
