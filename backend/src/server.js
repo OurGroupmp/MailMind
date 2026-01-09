@@ -11,9 +11,15 @@ dotenv.config();
 
 const app = express();
 
-app.use(cors({
-  origin: "http://localhost:5173"
-}));
+app.use(
+  cors({
+    origin: [
+      "http://localhost:5173",           // local dev
+      "https://mail-mind-evu63t6m7-mirthipati-megha-vardhans-projects.vercel.app/", // deployed frontend
+    ],
+  })
+);
+
 app.use(express.json());
 app.use("/api/emails", emailRoutes);
 app.use("/api/analytics", analyticsRoutes);
