@@ -14,7 +14,7 @@ app.use(
   cors({
     origin: [
       "http://localhost:5173",           // local dev
-      "https://mail-mind-rust.vercel.app/", // deployed frontend
+      "https://mail-mind-rust.vercel.app", // deployed frontend
     ],
   })
 );
