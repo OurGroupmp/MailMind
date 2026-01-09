@@ -4,7 +4,7 @@ import dotenv from "dotenv";
 import connectDB from "./config/db.js";
 import emailRoutes from "./routes/emailroutes.js";
 import analyticsRoutes from "./routes/analyticsRoutes.js";
-
+import seedEmails from "./services/seedEmails.js";
 
 dotenv.config();
 
