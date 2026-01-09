@@ -1,4 +1,4 @@
-const API_BASE = "http://localhost:5000/api";
+const API_BASE = "https://mailmind-ezlf.onrender.com/api";
 
 export const fetchEmails = async () => {
   const res = await fetch(`${API_BASE}/emails`);
@@ -22,7 +22,7 @@ export const updateEmailCategory = async (id, userCategory) => {
   return res.json();
 };
 
-const BASE_URL = "http://localhost:5000/api";
+const BASE_URL = "https://mailmind-ezlf.onrender.com/api";
 
 export async function fetchAnalytics() {
   const res = await fetch(`${BASE_URL}/analytics`);
